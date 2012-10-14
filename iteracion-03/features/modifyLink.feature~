@@ -1,0 +1,30 @@
+Feature: As a speaker I want to modify the link to make it more readable.
+Sucessfull Scenario should show SUCESS
+Failed Scenario should show FAIL
+
+Background:
+  	Given the event "event1" with the link "/rateme/event1" exists
+
+Scenario: successful modification of a event’s link
+
+	Given I'm in the "View Event" page
+	And I press "Edit" on the event called "event1"
+	Then I'm in the "Edit" page
+	And press "regenerate link"
+	Then I'm in the "Edit_link" page
+	And I put "/rateme/event_link"
+	And I press "Accept"
+	Then I should get "SUCCESS"
+
+
+Scenario:The event was rated
+
+	Given I'm in the "View Event" page
+	And I press "Edit" on the event called "event1"
+	Then I'm in the "Edit" page
+	And press "regenerate link"
+	Then I should get "FAIL"
+
+
+	
+
