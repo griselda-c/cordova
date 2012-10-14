@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Feature: As an assistant I want to comment my qualification to give more detail about it
+=======
+Feature As an assistant I want to comment my qualification to give more detail about it
+>>>>>>> 9443797061f14b49a2c13801b77d99fd0c063fbf
 Sucessfull Scenario should show SUCESS
 Failed Scenario should show FAIL
 can not post a comment without choosing an option
